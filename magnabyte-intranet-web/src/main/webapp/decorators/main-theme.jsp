@@ -10,7 +10,7 @@
 <link rel="stylesheet"
 	href="${pageContext.request.contextPath}/css/bootstrap.min.css" />
 <link rel="stylesheet"
-	href="${pageContext.request.contextPath}/css/bootstrap-responsive.min.css" />
+	href="${pageContext.request.contextPath}/css/bootstrap-theme.min.css" />
 <link rel="stylesheet" type="text/css"
 	href="${pageContext.request.contextPath}/css/magna-style.css">
 <script
@@ -47,51 +47,48 @@
 <body>
 	<div class="wrap">
 		<!-- HEADER -->
-		<div class="navbar navbar-inverse navbar-fixed-top">
-			<div class="navbar-inner">
-				<div class="container">
-					<div class="row-fluid">
-						<div class="span3">
-							<button type="button" class="btn btn-navbar"
-								data-toggle="collapse" data-target=".nav-collapse">
-								<span class="icon-bar"></span> <span class="icon-bar"></span> <span
-									class="icon-bar"></span>
-							</button>
-							<a class="brand"
-								href="${pageContext.request.contextPath}/intranet/welcome">
-								<img id="computerIcon"
-								src="${pageContext.request.contextPath}/img/computer-icon-white.png"
-								alt="Logo"> Intranet Corporativa <span class="badge badge-info">@</span></a>
-							
-						</div>
-						<div class="nav-collapse collapse pull-right">
-							<ul class="nav">
-								<li><a
-									href="${pageContext.request.contextPath}/intranet/welcome">Inicio</a></li>
-								<li><a
-									href="${pageContext.request.contextPath}/intranet/directorio/showDirectorio">Directorio</a></li>
-								<li><a href="#about">Acerca de</a></li>
-							</ul>
-						</div>
+		<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+			<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle"
+							data-toggle="collapse" data-target=".navbar-collapse">
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span> 
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand"
+							href="${pageContext.request.contextPath}/intranet/welcome">
+							<img id="computerIcon" src="${pageContext.request.contextPath}/img/computer-icon-white.png" alt="Logo"> 
+							Intranet Corporativa <span class="badge">@</span>
+							</a>
+						
 					</div>
-				</div>
+					<div class="collapse navbar-collapse pull-right">
+						<ul class="nav navbar-nav">
+							<li><a
+								href="${pageContext.request.contextPath}/intranet/welcome">Inicio</a></li>
+							<li><a
+								href="${pageContext.request.contextPath}/intranet/directorio/showDirectorio">Directorio</a></li>
+							<li><a href="#about">Acerca de</a></li>
+						</ul>
+					</div>
 			</div>
 		</div>
 		<div class="logo-header">
 			<div class="container">
-				<div class="row-fluid">
-					<div class="span3">
+				<div class="row">
+					<div class="col-md-3">
 						<div class="logo">
 							<a href="#"><img id="logoImg"
 								src="${pageContext.request.contextPath}/img/magnabyte_logo1.png"
 								alt="Logo"></a>
 						</div>
 					</div>
-					<div class="span1 pull-right">
+					<div class="col-md-1 pull-right">
 						<div class="logo-net">
 							<img id="folderNet"
 									src="${pageContext.request.contextPath}/img/folders-internet-icon-white.png"
-									alt="Logo" style="height: 45px; width: 45px;">
+									alt="Logo">
 						</div>
 					</div>
 				</div>

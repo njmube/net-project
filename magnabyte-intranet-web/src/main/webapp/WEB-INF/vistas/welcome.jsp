@@ -7,6 +7,11 @@
 	<!-- Carousel
     ================================================== -->
 	<div id="myCarousel" class="carousel slide">
+		<ol class="carousel-indicators">
+	        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	        <li data-target="#myCarousel" data-slide-to="1"></li>
+	        <li data-target="#myCarousel" data-slide-to="2"></li>
+	    </ol>
 		<div class="carousel-inner">
 			<div class="item active">
 				<img src="${pageContext.request.contextPath}/img/slide-01.jpg" alt="">
@@ -16,7 +21,7 @@
 						<p class="lead">Cras justo odio, dapibus ac facilisis in,
 							egestas eget quam. Donec id elit non mi porta gravida at eget
 							metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<a class="btn btn-large btn-primary" href="#">Sign up today</a>
+						<a class="btn btn-primary" href="#">Sign up today</a>
 					</div>
 				</div>
 			</div>
@@ -28,7 +33,7 @@
 						<p class="lead">Cras justo odio, dapibus ac facilisis in,
 							egestas eget quam. Donec id elit non mi porta gravida at eget
 							metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<a class="btn btn-large btn-primary" href="#">Learn more</a>
+						<a class="btn btn-primary" href="#">Learn more</a>
 					</div>
 				</div>
 			</div>
@@ -40,7 +45,7 @@
 						<p class="lead">Cras justo odio, dapibus ac facilisis in,
 							egestas eget quam. Donec id elit non mi porta gravida at eget
 							metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-						<a class="btn btn-large btn-primary" href="#">Browse gallery</a>
+						<a class="btn btn-primary" href="#">Browse gallery</a>
 					</div>
 				</div>
 			</div>
@@ -51,8 +56,8 @@
 <%-- 			<span class="label label-info"><a href="?lang=en"><small><spring:message --%>
 <%-- 						code="ingles" /></small></a></span> --%>
 <!-- 		</p> -->
-		<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-		<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+		<a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 	</div>
 	<!-- /.carousel -->
 
@@ -64,30 +69,27 @@
 
 		<!-- Three columns of text below the carousel -->
 		<div class="white-panel">
-			<div class="row-fluid">
-				<div class="span4">
+			<div class="row">
+				<div class="col-md-4">
 					<h2>Misión</h2>
 					<p>Desarrollar Aplicaciones empresariales basadas en las mejores
 						prácticas de negocios, proveyendo a los empresarios
 						latinoamericanos con herramientas innovadoras y escalables que les
 						ayuden a alcanzar sus objetivos.</p>
 				</div>
-				<!-- /.span4 -->
-				<div class="span4">
+				<div class="col-md-4">
 					<h2>Visión</h2>
 					<p>Seremos una organización dinámica, respetada por su capacidad
 						y sus recursos profesionales. Debido a esto mantenemos excelentes y
 						duraderas relaciones de negocios con nuestros clientes, nunca
 						olvidamos que nuestro éxito está directamente ligado al suyo.</p>
 				</div>
-				<!-- /.span4 -->
-				<div class="span4">
+				<div class="col-md-4">
 					<h2>Política de Calidad</h2>
 					<p>Mantenemos y creamos soluciones de Software, planeando e
 						implantando procesos entre todo nuestro personal y buscando áreas
 						de oportunidad, mediante procesos de mejora continua.</p>
 				</div>
-				<!-- /.span4 -->
 			</div>
 		</div>
 		<!-- /.row -->

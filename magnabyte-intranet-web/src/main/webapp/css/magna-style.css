@@ -7,7 +7,7 @@ html,body {
 }
 
 body {
-	padding-top: 41px;
+	padding-top: 51px;
 }
 
 .logo-header {
@@ -30,18 +30,18 @@ body {
 
 .logo-net img {
 	height: 45px; 
-	width: 45px;
+	width: 50px;
 }
 
 .main-content {
 	margin-top: 20px;
 }
 
-.brand span {
+.navbar-brand span {
 	vertical-align: top;
 }
 
-.brand img {
+.navbar-brand img {
 	vertical-align: top;
 	height: 20px; 
 	width: 20px;
@@ -61,6 +61,10 @@ body {
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .075);
 	padding-left: 10px;
 	padding-right: 10px;
+}
+
+hr {
+	border-top: 1px solid #dadada;
 }
 
 table .header {
@@ -133,7 +137,7 @@ table .headerSortUp:after {
 	min-height: 100%;
 	height: auto !important;
 	height: 100%;
-	margin: 0 auto -71px;
+	margin: 0 auto -100px;
 }
 
 #language {
@@ -154,7 +158,7 @@ table .headerSortUp:after {
 }
 
 #push,#footer {
-	height: 70px;
+	height: 100px;
 }
 
 .form500 {
@@ -183,23 +187,23 @@ table .headerSortUp:after {
 	margin-bottom: 60px;
 }
 
-.carousel .container {
-	position: relative;
-	z-index: 9;
-}
+/* .carousel .container { */
+/* 	position: relative; */
+/* 	z-index: 9; */
+/* } */
 
-.carousel-control {
-	height: 80px;
-	margin-top: 0;
-	font-size: 120px;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-	background-color: transparent;
-	border: 0;
-	z-index: 10;
-}
+/* .carousel-control { */
+/* 	height: 80px; */
+/* 	margin-top: 0; */
+/* 	font-size: 120px; */
+/* 	text-shadow: 0 1px 1px rgba(0, 0, 0, .4); */
+/* 	background-color: transparent; */
+/* 	border: 0; */
+/* 	z-index: 10; */
+/* } */
 
 .carousel .item {
-	height: 500px;
+	height: 495px;
 }
 
 .carousel img {
@@ -207,33 +211,39 @@ table .headerSortUp:after {
 	top: 0;
 	left: 0;
 	min-width: 100%;
-	height: 500px;
+	height: 495px;
 }
 
-.carousel-caption {
-	background-color: transparent;
-	position: static;
-	max-width: 550px;
-	padding: 0 20px;
-	margin-top: 200px;
+.carousel-caption p {
+	margin-bottom: 20px;
+	font-size: 21px;
+	line-height: 1.4;
 }
 
-.carousel-caption h1,.carousel-caption .lead {
-	margin: 0;
-	line-height: 1.25;
-	color: #fff;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, .4);
-}
+/* .carousel-caption { */
+/* 	background-color: transparent; */
+/* 	position: static; */
+/* 	max-width: 550px; */
+/* 	padding: 0 20px; */
+/* 	margin-top: 200px; */
+/* } */
 
-.carousel-caption .btn {
-	margin-top: 10px;
-}
+/* .carousel-caption h1,.carousel-caption .lead { */
+/* 	margin: 0; */
+/* 	line-height: 1.25; */
+/* 	color: #fff; */
+/* 	text-shadow: 0 1px 1px rgba(0, 0, 0, .4); */
+/* } */
+
+/* .carousel-caption .btn { */
+/* 	margin-top: 10px; */
+/* } */
 
 /* MARKETING CONTENT
     -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .span4 {
+.marketing .col-md-4 {
 	text-align: center;
 }
 
@@ -320,25 +330,34 @@ div.dataTables_paginate {
 @media (min-width: 768px) and (max-width: 979px) {
 	body {
 		background-color: #333;
-		padding-top: 0px;
+		padding-top: 51px;
 	}
 }
 
 /* Landscape phone to portrait table */
 @media (max-width: 767px) {
 	body {
-		background-color: red;
-		padding-top: 0px;
+/* 		background-color: red; */
+		padding-top: 51px;
+	}
+	
+	.navbar-collapse {
+		float: none!important;
 	}
 }
 
 /* Landscpe phone and down */
 @media (max-width: 468px) {
 	body {
-		padding-top: 0px;
+		padding-top: 51px;
 		padding-left: 0px;
     	padding-right: 0px
 	}
+	
+	.navbar-collapse {
+		float: none!important;
+	}
+	
 	.navbar-fixed-top {
     	margin-bottom: 0px;
 	}
@@ -359,11 +378,11 @@ div.dataTables_paginate {
     	margin: 0;
 	}
 	
-	.logo-net img {width
+	.logo-net img {
 	    height: 45px;
 	    padding-right: 10px;
 	    float: right;
-	    width: 45px;
+	    width: 50px;
 	    padding-bottom: 5px
 	}
 	
@@ -372,16 +391,16 @@ div.dataTables_paginate {
     	margin-right: 5px;
 	}
 	
-	.carousel {
-	    margin-bottom: 40px;
+/* 	.carousel { */
+/* 	    margin-bottom: 40px; */
+/* 	} */
+	
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	    height: 495px;
 	}
 	
-	.carousel .item {
-	    height: 515px;
-	}
-	
-	.carousel img {
-	    height: 515px;
+	.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+	    height: 495px;
 	}
 
 	.featurette-divider {

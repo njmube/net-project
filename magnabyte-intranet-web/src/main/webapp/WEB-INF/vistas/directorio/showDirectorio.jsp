@@ -13,8 +13,8 @@
 		<div class="main-content">
 			<!-- Three columns of text below the carousel -->
 			<div class="white-panel">
-				<div class="row-fluid">
-					<div class="span12">
+				<div class="row">
+					<div class="col-md-12">
 						<h2>Misión</h2>
 						<p>Desarrollar Aplicaciones empresariales basadas en las mejores
 							prácticas de negocios, proveyendo a los empresarios
