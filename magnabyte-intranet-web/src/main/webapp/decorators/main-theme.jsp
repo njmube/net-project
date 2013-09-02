@@ -98,7 +98,6 @@
 		<div class="content">
 			<decorator:body />
 		</div>
-		<div id="push"></div>
 	</div>
 	
 	<!-- FOOTER -->
