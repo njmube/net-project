@@ -69,6 +69,9 @@
 								href="${pageContext.request.contextPath}/intranet/welcome">Inicio</a></li>
 							<li><a
 								href="${pageContext.request.contextPath}/intranet/directorio/showDirectorio">Directorio</a></li>
+							<li><a
+								href="${pageContext.request.contextPath}/intranet/cfdi/validadorSello">Validador Sello CFDI</a>
+							</li>
 							<li><a href="#about">Acerca de</a></li>
 						</ul>
 					</div>
