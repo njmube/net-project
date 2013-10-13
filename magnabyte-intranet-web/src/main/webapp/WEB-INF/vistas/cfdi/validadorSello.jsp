@@ -27,16 +27,15 @@
 						<div class="well form500">
 							<form:form
 								action="${pageContext.request.contextPath}/intranet/cfdi/validar"
-								method="POST" modelAttribute="uploadForm" role="form"
-								id="formCfdiValidador"
-								enctype="multipart/form-data">
+								method="post" enctype="multipart/form-data" modelAttribute="uploadForm" role="form"
+								id="formCfdiValidador">
 								<div class="form-group">
-									<label for="certificadoFile">Certificado</label> <input
-										type="file" id="files[0]" name="files[1]">
+									<label for="files[0]">Certificado</label> <input
+										type="file" id="files[0]" name="files[0]">
 									<p class="help-block">Selecciona el certificado.</p>
 								</div>
 								<div class="form-group">
-									<label for="llaveFile">Llave</label> <input type="file"
+									<label for="files[1]">Llave</label> <input type="file"
 										id="files[1]" name="files[1]">
 									<p class="help-block">Selecciona la llave.</p>
 								</div>

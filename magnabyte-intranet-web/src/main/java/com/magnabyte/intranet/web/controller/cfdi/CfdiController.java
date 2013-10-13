@@ -1,6 +1,5 @@
 package com.magnabyte.intranet.web.controller.cfdi;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -25,7 +24,7 @@ public class CfdiController {
 		return "cfdi/validadorSello";
 	}
 	
-	@RequestMapping(value = "/validar", method = RequestMethod.POST)
+	@RequestMapping(value="/validar", method=RequestMethod.POST)
 	public String validar(@ModelAttribute("uploadForm") FileUploadForm uploadForm, ModelMap model) {
 		logger.info("validando...");
 		
