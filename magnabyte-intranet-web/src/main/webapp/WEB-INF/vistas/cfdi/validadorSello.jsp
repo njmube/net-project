@@ -27,21 +27,21 @@
 						<div class="well form500">
 							<form:form
 								action="${pageContext.request.contextPath}/intranet/cfdi/validar"
-								method="post" enctype="multipart/form-data" modelAttribute="uploadForm" role="form"
+								method="post" enctype="multipart/form-data" modelAttribute="selloDigital" role="form"
 								id="formCfdiValidador">
 								<div class="form-group">
-									<label for="files[0]">Certificado</label> <input
-										type="file" id="files[0]" name="files[0]">
+									<label for="cerFile">Certificado</label> <input
+										type="file" id="cerFile" name="cerFile">
 									<p class="help-block">Selecciona el certificado.</p>
 								</div>
 								<div class="form-group">
-									<label for="files[1]">Llave</label> <input type="file"
-										id="files[1]" name="files[1]">
+									<label for="keyFile">Llave</label> <input type="file"
+										id="keyFile" name="keyFile">
 									<p class="help-block">Selecciona la llave.</p>
 								</div>
 								<div class="form-group">
 									<label for="password">Contraseña</label> <input
-										type="text" class="form-control" id="password"
+										type="text" class="form-control" id="password" name="password"
 										placeholder="Ingresa la contraseña...">
 								</div>
 								<button type="submit" class="btn btn-primary">Validar</button>
