@@ -3,6 +3,7 @@
 <html>
 <head>
 <title>Validador Sello CFDI</title>
+<script src="${pageContext.request.contextPath}/js/cfdi/cfdi.js"></script>
 </head>
 <body>
 	<!-- Marketing messaging and featurettes
@@ -27,11 +28,11 @@
 						<div class="well form500">
 							<form:form
 								action="${pageContext.request.contextPath}/intranet/cfdi/validar"
-								method="post" enctype="multipart/form-data" modelAttribute="selloDigital" role="form"
-								id="formCfdiValidador">
+								method="post" enctype="multipart/form-data"
+								modelAttribute="selloDigital" role="form" id="formCfdiValidador">
 								<div class="form-group">
-									<label for="cerFile">Certificado</label> <input
-										type="file" id="cerFile" name="cerFile">
+									<label for="cerFile">Certificado</label> <input type="file"
+										id="cerFile" name="cerFile">
 									<p class="help-block">Selecciona el certificado.</p>
 								</div>
 								<div class="form-group">
@@ -40,12 +41,17 @@
 									<p class="help-block">Selecciona la llave.</p>
 								</div>
 								<div class="form-group">
-									<label for="password">Contraseña</label> <input
-										type="text" class="form-control" id="password" name="password"
+									<label for="password">Contraseña</label> <input type="password"
+										class="form-control" id="password" name="password"
 										placeholder="Ingresa la contraseña...">
 								</div>
 								<button type="submit" class="btn btn-primary">Validar</button>
 							</form:form>
+						</div>
+						<div class="alert alert-${typealert}">
+							<button type="button" class="close" data-dismiss="alert"
+								aria-hidden="true">&times;</button>
+							<div id="message"><strong>${message}</strong></div>
 						</div>
 					</div>
 				</div>
