@@ -29,16 +29,14 @@ public class CfdiController {
 	@RequestMapping(value="/validar", method=RequestMethod.POST)
 	public String validar(@ModelAttribute("selloDigital") SelloDigital selloDigital, ModelMap model) {
 		logger.info("validando...");
-
 		boolean selloValido = cfdiService.validarSelloDigital(selloDigital);
 		
 		if (selloValido) {
-			model.put("message", "Sello valido!");
 			model.put("typealert", "success");
 		} else {
-			model.put("message", "El sello no es valido!");
 			model.put("typealert", "danger");
 		}
+		model.put("message", selloDigital.getMensajeValidacion());
 
 		return "cfdi/validadorSello";
 	}

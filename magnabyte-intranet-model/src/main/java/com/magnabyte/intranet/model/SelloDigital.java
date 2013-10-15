@@ -6,6 +6,7 @@ public class SelloDigital {
 	private MultipartFile keyFile;
 	private MultipartFile cerFile;
 	private String password;
+	private String mensajeValidacion;
 
 	public MultipartFile getKeyFile() {
 		return keyFile;
@@ -29,6 +30,14 @@ public class SelloDigital {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	public String getMensajeValidacion() {
+		return mensajeValidacion;
+	}
+
+	public void setMensajeValidacion(String mensajeValidacion) {
+		this.mensajeValidacion = mensajeValidacion;
 	}
 
 }

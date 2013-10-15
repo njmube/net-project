@@ -32,12 +32,12 @@
 								modelAttribute="selloDigital" role="form" id="formCfdiValidador">
 								<div class="form-group">
 									<label for="cerFile">Certificado</label> <input type="file"
-										id="cerFile" name="cerFile">
+										id="cerFile" name="cerFile" accept=".cer">
 									<p class="help-block">Selecciona el certificado.</p>
 								</div>
 								<div class="form-group">
 									<label for="keyFile">Llave</label> <input type="file"
-										id="keyFile" name="keyFile">
+										id="keyFile" name="keyFile" accept=".key">
 									<p class="help-block">Selecciona la llave.</p>
 								</div>
 								<div class="form-group">
