@@ -52,4 +52,14 @@ public class CfdiController {
 		logger.info("datos del cliente...");
 		return "cfdi/datosCliente";
 	}
+	
+	@RequestMapping("/mailCliente")
+	public String mailCliente(ModelMap model) {
+		return "cfdi/mailCliente";
+	}
+	
+	@RequestMapping("/successFactura")
+	public String successFactura(ModelMap model) {
+		return "cfdi/successFactura";
+	}
 }

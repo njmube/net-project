@@ -71,6 +71,8 @@
 								href="${pageContext.request.contextPath}/intranet/directorio/showDirectorio">Directorio <span class="glyphicon glyphicon-book"></span></a></li>
 							<li><a
 								href="${pageContext.request.contextPath}/intranet/cfdi/validadorSello">Validador Sello CFDI <span class="glyphicon glyphicon-ok"></span></a>
+							<li><a
+								href="${pageContext.request.contextPath}/intranet/cfdi/facturacion">Facturación @</a>
 							</li>
 							<li><a href="#about">Acerca de <span class="glyphicon glyphicon-question-sign"></span></a></li>
 						</ul>
