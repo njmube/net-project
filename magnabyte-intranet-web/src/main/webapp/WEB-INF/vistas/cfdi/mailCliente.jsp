@@ -35,6 +35,7 @@
 									placeholder="">
 							</div>
 						</div>
+						<hr>
 						<div class="form-group">
 							<div class="col-lg-offset-8 col-lg-4">
 								<div>
