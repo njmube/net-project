@@ -63,6 +63,10 @@ body {
 	padding-right: 10px;
 }
 
+.white-panel h2 span {
+	vertical-align: top;
+}
+
 hr {
 	border-top: 1px solid #dadada;
 }
@@ -117,7 +121,7 @@ table .headerSortUp:after {
 	font-size: 12px;
 }
 
-footer {
+#footer {
 	padding: 30px 0;
 	text-align: center;
 	color: #ffffff;
@@ -128,7 +132,7 @@ footer {
 	z-index: -20;
 }
 
-footer .container {
+#footer .row {
 	position: fixed;
 	left: 0px;
 	right: 0px;

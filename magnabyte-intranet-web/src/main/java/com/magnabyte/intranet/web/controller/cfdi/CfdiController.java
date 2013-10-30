@@ -40,4 +40,16 @@ public class CfdiController {
 
 		return "cfdi/validadorSello";
 	}
+	
+	@RequestMapping("/facturacion")
+	public String facturacion(ModelMap model) {
+		logger.info("prototipo facturacion...");
+		return "cfdi/facturacion";
+	}
+	
+	@RequestMapping("/datosCliente")
+	public String datosCliente(ModelMap model) {
+		logger.info("datos del cliente...");
+		return "cfdi/datosCliente";
+	}
 }

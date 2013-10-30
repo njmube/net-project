@@ -59,20 +59,20 @@
 						<a class="navbar-brand"
 							href="${pageContext.request.contextPath}/intranet/welcome">
 							<img id="computerIcon" src="${pageContext.request.contextPath}/img/computer-icon-white.png" alt="Logo"> 
-							Intranet Corporativa <span class="badge">@</span>
+							Intranet Corporativa <span class="glyphicon glyphicon-globe"></span>
 							</a>
 						
 					</div>
 					<div class="collapse navbar-collapse pull-right">
 						<ul class="nav navbar-nav">
 							<li><a
-								href="${pageContext.request.contextPath}/intranet/welcome">Inicio</a></li>
+								href="${pageContext.request.contextPath}/intranet/welcome">Inicio <span class="glyphicon glyphicon-home"></span></a></li>
 							<li><a
-								href="${pageContext.request.contextPath}/intranet/directorio/showDirectorio">Directorio</a></li>
+								href="${pageContext.request.contextPath}/intranet/directorio/showDirectorio">Directorio <span class="glyphicon glyphicon-book"></span></a></li>
 							<li><a
-								href="${pageContext.request.contextPath}/intranet/cfdi/validadorSello">Validador Sello CFDI</a>
+								href="${pageContext.request.contextPath}/intranet/cfdi/validadorSello">Validador Sello CFDI <span class="glyphicon glyphicon-ok"></span></a>
 							</li>
-							<li><a href="#about">Acerca de</a></li>
+							<li><a href="#about">Acerca de <span class="glyphicon glyphicon-question-sign"></span></a></li>
 						</ul>
 					</div>
 			</div>
@@ -104,13 +104,17 @@
 	</div>
 	
 	<!-- FOOTER -->
-	<footer id="footer" class="footer">
-		<div class="container">
-			<p class="credit">&copy; 2013 Magnabyte S.A de C.V.</p>
+	<div id="footer" class="footer">
+		<div class="row">
 			<p class="credit">
-				<a href="#">Acerca de &middot;</a><a href="#"> Ir arriba</a>
+				<span class="glyphicon glyphicon-registration-mark"></span> 2013
+				Magnabyte S.A de C.V.
+			</p>
+			<p class="credit">
+				<a href="#">Acerca de <span class="glyphicon glyphicon-question-sign"></span>
+				</a>&middot;<a href="#"> Ir arriba <span class="glyphicon glyphicon-circle-arrow-up"></span></a>
 			</p>
 		</div>
-	</footer>
+	</div>
 </body>
 </html>
