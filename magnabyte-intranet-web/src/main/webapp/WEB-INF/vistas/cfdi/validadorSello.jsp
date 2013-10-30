@@ -3,7 +3,6 @@
 <html>
 <head>
 <title>Validador Sello CFDI</title>
-<script src="${pageContext.request.contextPath}/js/cfdi/cfdi.js"></script>
 </head>
 <body>
 	<!-- Marketing messaging and featurettes
@@ -16,6 +15,7 @@
 			<!-- Three columns of text below the carousel -->
 			<div class="white-panel row">
 				<h2>Validador Sello CFDI</h2>
+				<br>
 				<p>
 					<strong>Instrucciones: </strong>Carga el archivo
 					<code>.key</code>
@@ -23,6 +23,16 @@
 					<code>.cer</code>
 					e ingresa la contraseña
 				</p>
+				<br>
+				<div class="col-md-6 col-md-offset-3">
+					<div class="alert alert-${typealert}">
+						<button type="button" class="close" data-dismiss="alert"
+							aria-hidden="true">&times;</button>
+						<div id="message">
+							<strong>${message}</strong>
+						</div>
+					</div>
+				</div>
 				<div class="well col-md-6 col-md-offset-3">
 					<form:form
 						action="${pageContext.request.contextPath}/intranet/cfdi/validar"
@@ -48,15 +58,9 @@
 						<button type="submit" class="btn btn-primary">Validar</button>
 					</form:form>
 				</div>
-				<div class="alert alert-${typealert}">
-					<button type="button" class="close" data-dismiss="alert"
-						aria-hidden="true">&times;</button>
-					<div id="message">
-						<strong>${message}</strong>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
+	<script src="${pageContext.request.contextPath}/js/cfdi/cfdi.js"></script>
 </body>
 </html>

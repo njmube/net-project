@@ -7,6 +7,7 @@
 	<div class="container marketing">
 		<div class="main-content">
 			<div class="white-panel row">
+				<br>
 				<div class="alert alert-success">
 					<button type="button" class="close" data-dismiss="alert"
 						aria-hidden="true">&times;</button>

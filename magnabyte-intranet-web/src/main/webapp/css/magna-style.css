@@ -145,16 +145,6 @@ table .headerSortUp:after {
 	color: #f5f5f5;
 }
 
-.alert {
-	/* 	margin-top: 5px; */
-	/* 	margin-bottom: -10px; */
-	top: 40%;
-	left: 26%;
-	position: absolute;
-	width: 550px;
-	z-index: 1000;
-}
-
 .wrap {
 	min-height: 100%;
 	height: auto !important;
