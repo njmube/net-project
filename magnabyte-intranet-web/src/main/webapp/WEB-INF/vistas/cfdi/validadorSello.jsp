@@ -21,7 +21,7 @@
 					<code>.key</code>
 					y
 					<code>.cer</code>
-					e ingresa la contraseña
+					e ingresa la contraseï¿½a
 				</p>
 				<br>
 				<div class="col-md-6 col-md-offset-3">
@@ -50,9 +50,9 @@
 						</div>
 						<div class="row">
 							<div class="form-group col-lg-6">
-								<label for="password">Contraseña</label> <input type="password"
+								<label for="password">Contraseï¿½a</label> <input type="password"
 									class="form-control" id="password" name="password"
-									placeholder="Ingresa la contraseña...">
+									placeholder="Ingresa la contraseï¿½a...">
 							</div>
 						</div>
 						<button type="submit" class="btn btn-primary">Validar</button>
