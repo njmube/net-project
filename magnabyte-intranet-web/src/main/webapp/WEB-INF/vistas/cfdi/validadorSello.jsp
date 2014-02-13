@@ -1,3 +1,5 @@
+<%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <html>
@@ -21,7 +23,7 @@
 					<code>.key</code>
 					y
 					<code>.cer</code>
-					e ingresa la contrase�a
+					e ingresa la contraseña
 				</p>
 				<br>
 				<div class="col-md-6 col-md-offset-3">
@@ -34,8 +36,9 @@
 					</div>
 				</div>
 				<div class="well col-md-6 col-md-offset-3">
+				<c:url var="urlValidation" value="/cfdi/validar"/>
 					<form:form
-						action="${pageContext.request.contextPath}/intranet/cfdi/validar"
+						action="${urlValidation}"
 						method="post" enctype="multipart/form-data"
 						modelAttribute="selloDigital" role="form" id="formCfdiValidador">
 						<div class="form-group">
@@ -50,9 +53,9 @@
 						</div>
 						<div class="row">
 							<div class="form-group col-lg-6">
-								<label for="password">Contrase�a</label> <input type="password"
+								<label for="password">Contraseña</label> <input type="password"
 									class="form-control" id="password" name="password"
-									placeholder="Ingresa la contrase�a...">
+									placeholder="Ingresa la contraseña...">
 							</div>
 						</div>
 						<button type="submit" class="btn btn-primary">Validar</button>
@@ -61,6 +64,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="${pageContext.request.contextPath}/js/cfdi/cfdi.js"></script>
+	
+	<script src="<c:url value="/resources/js/cfdi/cfdi.js"/>"></script>
 </body>
 </html>

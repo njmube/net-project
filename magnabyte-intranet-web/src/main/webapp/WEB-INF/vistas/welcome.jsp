@@ -1,3 +1,5 @@
+<%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <html>
 <head>
@@ -14,7 +16,7 @@
 	    </ol>
 		<div class="carousel-inner">
 			<div class="item active">
-				<img src="${pageContext.request.contextPath}/img/slide-01.jpg" alt="">
+				<img src="<c:url value="/resources/img/slide-01.jpg"/>" alt="">
 				<div class="container">
 					<div class="carousel-caption">
 						<h1>Example headline.</h1>
@@ -26,7 +28,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="${pageContext.request.contextPath}/img/slide-02.jpg" alt="">
+				<img src="<c:url value="/resources/img/slide-02.jpg"/>" alt="">
 				<div class="container">
 					<div class="carousel-caption">
 						<h1>Another example headline.</h1>
@@ -38,7 +40,7 @@
 				</div>
 			</div>
 			<div class="item">
-				<img src="${pageContext.request.contextPath}/img/slide-03.jpg" alt="">
+				<img src="<c:url value="/resources/img/slide-03.jpg"/>" alt="">
 				<div class="container">
 					<div class="carousel-caption">
 						<h1>One more for good measure.</h1>
@@ -71,23 +73,23 @@
 		<div class="white-panel">
 			<div class="row">
 				<div class="col-md-4">
-					<h2>MisiÛn</h2>
+					<h2>Misi√≥n</h2>
 					<p>Desarrollar Aplicaciones empresariales basadas en las mejores
-						pr·cticas de negocios, proveyendo a los empresarios
+						pr√°cticas de negocios, proveyendo a los empresarios
 						latinoamericanos con herramientas innovadoras y escalables que les
 						ayuden a alcanzar sus objetivos.</p>
 				</div>
 				<div class="col-md-4">
-					<h2>VisiÛn</h2>
-					<p>Seremos una organizaciÛn din·mica, respetada por su capacidad
+					<h2>Visi√≥n</h2>
+					<p>Seremos una organizaci√≥n din√°mica, respetada por su capacidad
 						y sus recursos profesionales. Debido a esto mantenemos excelentes y
 						duraderas relaciones de negocios con nuestros clientes, nunca
-						olvidamos que nuestro Èxito est· directamente ligado al suyo.</p>
+						olvidamos que nuestro √©xito est√° directamente ligado al suyo.</p>
 				</div>
 				<div class="col-md-4">
-					<h2>PolÌtica de Calidad</h2>
+					<h2>Pol√≠tica de Calidad</h2>
 					<p>Mantenemos y creamos soluciones de Software, planeando e
-						implantando procesos entre todo nuestro personal y buscando ·reas
+						implantando procesos entre todo nuestro personal y buscando √°reas
 						de oportunidad, mediante procesos de mejora continua.</p>
 				</div>
 			</div>
@@ -101,74 +103,74 @@
 
 		<div class="featurette">
 			<img class="featurette-image pull-right thumbnail"
-				src="${pageContext.request.contextPath}/img/satisfaccion_cliente.jpg" width="325" height="325">
+				src="<c:url value="/resources/img/satisfaccion_cliente.jpg"/>" width="325" height="325">
 			<h2 class="featurette-heading">
-				SatisfacciÛn Total <span class="muted">de nuestros Clientes</span>
+				Satisfacci√≥n Total <span class="muted">de nuestros Clientes</span>
 			</h2>
-			<p class="lead">Magnabyte est· comprometida con la satisfacciÛn
-				total de nuestros clientes para lo cual ponemos un gran Ènfasis en
+			<p class="lead">Magnabyte est√° comprometida con la satisfacci√≥n
+				total de nuestros clientes para lo cual ponemos un gran √©nfasis en
 				escuchar y trabajar siempre en equipo con ellos, en cada desarrollo,
-				instalaciÛn o actualizaciÛn. Debido a esto mantenemos excelentes y
+				instalaci√≥n o actualizaci√≥n. Debido a esto mantenemos excelentes y
 				duraderas relaciones de negocios con nuestros clientes. Nunca
-				debemos olvidar que nuestro Èxito est· directamente ligado al suyo.</p>
+				debemos olvidar que nuestro √©xito est√° directamente ligado al suyo.</p>
 		</div>
 
 		<hr class="featurette-divider">
 
 		<div class="featurette">
 			<img class="featurette-image pull-left thumbnail"
-				src="${pageContext.request.contextPath}/img/customer-service.jpg" width="325" height="325">
+				src="<c:url value="/resources/img/customer-service.jpg"/>" width="325" height="325">
 			<h2 class="featurette-heading">
 				Servicio
 			</h2>
 			<p class="lead">Nosotros nos enfocamos en brindar un excelente
 				servicio a nuestros clientes. Cuando decimos servicio, no nos
-				referimos ˙nicamente a instalar y parametrizar software, si no que
+				referimos √∫nicamente a instalar y parametrizar software, si no que
 				nos preocupamos por que nuestros clientes trabajen siempre con las
-				herramientas empresariales y las pr·cticas de negocios m·s adecuadas
-				a su situaciÛn. Para esto contamos con un grupo de consultores
-				especializados en las diferentes ·reas que componen una empresa.</p>
+				herramientas empresariales y las pr√°cticas de negocios m√°s adecuadas
+				a su situaci√≥n. Para esto contamos con un grupo de consultores
+				especializados en las diferentes √°reas que componen una empresa.</p>
 		</div>
 
 		<hr class="featurette-divider">
 
 		<div class="featurette">
 			<img class="featurette-image pull-right thumbnail"
-				src="${pageContext.request.contextPath}/img/employees.jpg" width="325" height="325">
+				src="<c:url value="/resources/img/employees.jpg"/>" width="325" height="325">
 			<h2 class="featurette-heading">
 				<span class="muted">Empleados</span>
 			</h2>
 			<p class="lead">En Magnabyte nos preciamos de contar con gente
-				inteligente, trabajadora e Ìntegra. Nuestros empleados son el
-				recurso m·s importante que tenemos, por tanto nos preocupamos por
+				inteligente, trabajadora e √≠ntegra. Nuestros empleados son el
+				recurso m√°s importante que tenemos, por tanto nos preocupamos por
 				que su desarrollo profesional y personal vayan siempre de la mano.
-				Trabajamos mucho y tambiÈn nos divertimos.</p>
+				Trabajamos mucho y tambi√©n nos divertimos.</p>
 		</div>
 
 		<hr class="featurette-divider">
 		
 		<div class="featurette">
 			<img class="featurette-image pull-left thumbnail"
-				src="${pageContext.request.contextPath}/img/socios.jpg" width="325" height="325">
+				src="<c:url value="/resources/img/socios.jpg"/>" width="325" height="325">
 			<h2 class="featurette-heading">
 				Socios e <span class="muted">Inversionistas</span>
 			</h2>
-			<p class="lead">Magnabyte no podrÌa existir sin el gran apoyo de
+			<p class="lead">Magnabyte no podr√≠a existir sin el gran apoyo de
 				sus socios e inversionistas, por lo que estamos comprometidos a
-				brindarles constantemente un atractivo retorno a su inversiÛn.</p>
+				brindarles constantemente un atractivo retorno a su inversi√≥n.</p>
 		</div>
 
 		<hr class="featurette-divider">
 
 		<div class="featurette">
 			<img class="featurette-image pull-right thumbnail"
-				src="${pageContext.request.contextPath}/img/crecimiento.jpg" width="325" height="325">
+				src="<c:url value="/resources/img/crecimiento.jpg"/>" width="325" height="325">
 			<h2 class="featurette-heading">
 				Crecimiento <span class="muted">Sostenido</span>
 			</h2>
 			<p class="lead">La industria del software, a nivel mundial, esta
-				caracterizada por ciclos de crecimiento y de contracciÛn del mercado
-				sumamente marcados. Nosotros creemos que a˙n en estas condiciones es
+				caracterizada por ciclos de crecimiento y de contracci√≥n del mercado
+				sumamente marcados. Nosotros creemos que a√∫n en estas condiciones es
 				necesario mantener un crecimiento sostenido. Para lograrlo nos
 				aseguramos de contar con productos que evolucionan constantemente
 				cubriendo las nuevas necesidades de la industria latinoamericana.</p>
@@ -178,15 +180,15 @@
 		
 		<div class="featurette">
 			<img class="featurette-image pull-left thumbnail"
-				src="${pageContext.request.contextPath}/img/comunidad.jpg" width="325" height="325">
+				src="<c:url value="/resources/img/comunidad.jpg"/>" width="325" height="325">
 			<h2 class="featurette-heading">
 				Comunidad
 			</h2>
 			<p class="lead">Nosotros creemos que es muy importante apoyar el
-				desarrollo de la comunidad que nos rodea, asÌ como crear una
+				desarrollo de la comunidad que nos rodea, as√≠ como crear una
 				conciencia social en nuestros empleados. Por lo tanto apoyamos a
-				sociedades no lucrativas enfocadas principalmente a la educaciÛn,
-				asÌ como a las iniciativas sociales de nuestros empleados y
+				sociedades no lucrativas enfocadas principalmente a la educaci√≥n,
+				as√≠ como a las iniciativas sociales de nuestros empleados y
 				clientes.</p>
 		</div>
 

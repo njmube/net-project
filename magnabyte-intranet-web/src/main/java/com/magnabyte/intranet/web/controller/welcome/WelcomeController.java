@@ -14,6 +14,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WelcomeController {
 	private static final Logger logger = LoggerFactory.getLogger(WelcomeController.class);
 	
+	@RequestMapping("/")
+	public String index() {
+		return "redirect:/welcome";
+	}
+	
 	@RequestMapping("/welcome")
 	public void welcome(ModelMap model) {
 		logger.debug("Welcome!!!!!");

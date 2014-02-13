@@ -1,3 +1,4 @@
+<%@ page pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <html>
 <head>
@@ -15,9 +16,9 @@
 			<div class="white-panel">
 				<div class="row">
 					<div class="col-md-12">
-						<h2>MisiÛn</h2>
+						<h2>Misi√≥n</h2>
 						<p>Desarrollar Aplicaciones empresariales basadas en las mejores
-							pr·cticas de negocios, proveyendo a los empresarios
+							pr√°cticas de negocios, proveyendo a los empresarios
 							latinoamericanos con herramientas innovadoras y escalables que les
 							ayuden a alcanzar sus objetivos.</p>
 					</div>
